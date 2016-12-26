@@ -1,0 +1,27 @@
+{
+	"name": "most-gamepad",
+	"description": "Observable HTML5 gamepads capable of sub-RAF precision",
+	"version": "1.0.0",
+	"main": "most-gamepad.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://archive.voodoowarez.com/most-gamepad"
+	},
+	"keywords": [
+		"gamepad",
+		"mostjs",
+		"observable"
+	],
+	"author": "rektide de la faye",
+	"license": "X11",
+	"dependencies": {
+		"defaulter": "^1.0.1",
+		"most-clock-multiplier": "^1.0.0",
+		"most-raf": "^1.0.0",
+		"most-replay": "^1.0.2",
+		"p-defer": "^1.0.0"
+	}
+}
