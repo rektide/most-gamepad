@@ -84,8 +84,11 @@ defaulter(function(){
 	return MostRAF()
 }, defaults, "raf")
 defaulter(function(){
+	var
+	  multiplier= this.multiplier!== undefined? this.multiplier: defaults.multiplier,
+	  raf= this.raf!== undefined? this.raf: defaults.raf
 	if( multiplier> 1){
-		return MostClockMultiplier( defaults.tick, defaults.multiplier)
+		return MostClockMultiplier( raf, multiplier)
 	}
-	return defaults.tick
+	return raf
 }, defaults, "tick")
