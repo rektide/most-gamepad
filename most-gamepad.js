@@ -72,11 +72,11 @@ function MostGamepad( options){
 		return wait.promise
 	}
 
-	return request
+	return get
 }
 
-
-exports= module.exports
+module.exports= MostGamepad
+module.exports.MostGamepad= MostGamepad
 var defaults= module.exports.defaults= {
 	multiplier: 2
 }
@@ -89,4 +89,3 @@ defaulter(function(){
 	}
 	return defaults.tick
 }, defaults, "tick")
-
